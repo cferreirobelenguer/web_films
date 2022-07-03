@@ -1,14 +1,22 @@
-body {
+html {
   text-align: center;
   background-color: black;
 }
 .contenidoPelis{
   background-color: black;
   text-align: center;
-  margin: 100px;
+  padding: 70px;
   font-size: 1vw;
   color: aliceblue;
 
+}
+.contenido{
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  font-size: 1vw;
+  color: aliceblue;
 }
 .tituloPelis{
   background-color: black;
@@ -25,4 +33,60 @@ body {
     format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+/*Header*/
+
+.portada{
+  background-color: black;
+  padding-left: 30px;
+  padding-top: 20px;
+  text-align: left;
+}
+/*Intro*/
+
+.intro{
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.imagen{
+  padding: 50px;
+  text-align: center;
+}
+.informacion{
+  padding: 50px;
+  text-align: center;
+  font-size: 3vw;
+  background-color: black;
+  color: aliceblue;
+  margin: auto;
+  font-family: "bebasneue";
+}
+
+/*Footer*/
+.pie{
+  background-color: black;
+}
+.redes{
+  background-color: black;
+  color: aliceblue;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.copy{
+  background-color: black;
+  color: aliceblue;
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+  padding-bottom: 20px;
 }

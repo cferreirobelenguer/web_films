@@ -27,12 +27,15 @@ const Pelis=()=>{
         //Recorro las películas en la página principal
         pelis.map((i) =>{
             return(
-                <div className="contenidoPelis">
-                    <img src={'https://image.tmdb.org/t/p/w500/'+i.poster_path} width="250" heigth="250" alt="poster"/>
+                <div className="contenidoPelis" key={i.id}>
+                    <img src={'https://image.tmdb.org/t/p/w500/'+i.poster_path} className="img-fluid" width="300" heigth="300" alt="poster"/>
                     <div className="tituloPelis">
                         <h3>{i.original_title} - {i.release_date}</h3>
                     </div>
-                    <h5>{i.overview}</h5>
+                    <div className="contenido">
+                        <h5>{i.overview}</h5>
+                    </div>
+                    
                     
                 </div>
             );
