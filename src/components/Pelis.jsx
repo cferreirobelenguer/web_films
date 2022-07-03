@@ -29,8 +29,9 @@ const Pelis=()=>{
             return(
                 <div className="contenidoPelis" key={i.id}>
                         <div className="card" id="contenedorCard" >
-                            <img src={'https://image.tmdb.org/t/p/w500/'+i.poster_path} id="imagenCard" class="card-img-top" width="300" heigth="300" alt="poster"/>
-                            <div class="card-body">
+                            <img src={'https://image.tmdb.org/t/p/w500/'+i.poster_path} id="imagenCard" className="card-img-top" width="300" heigth="300" alt="poster"/>
+                            <div className="card-body">
+                            
                                 <div className="tituloPelis">
                                     <h3>{i.original_title} - {i.release_date}</h3>
                                 </div>
@@ -39,9 +40,6 @@ const Pelis=()=>{
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                    
                     
                 </div>
             );

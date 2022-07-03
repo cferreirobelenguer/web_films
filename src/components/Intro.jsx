@@ -4,7 +4,7 @@ const Intro=(props)=>{
     return(
         <div className="intro">
             <div className="imagen" >
-                <img src={imagen} className="img-fluid" width="800" heigth="800" alt="foto intro"/>
+                <img src={imagen} className="img-fluid" width="1000" heigth="1000" alt="foto intro"/>
             </div>
             <div className="informacion" data-aos="fade-left">
                 <h2>{props.frase}</h2>

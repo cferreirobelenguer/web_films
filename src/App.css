@@ -81,11 +81,11 @@ html {
 
 /*Footer*/
 .pie{
-  background-color: black;
+  background-color:firebrick;
 }
 .redes{
-  background-color: black;
-  color: aliceblue;
+  background-color:firebrick;
+  color: black;
   font-size: 2vw;
   text-align: center;
   padding-top: 50px;
@@ -93,8 +93,8 @@ html {
   padding-bottom: 20px;
 }
 .copy{
-  background-color: black;
-  color: aliceblue;
+  background-color:firebrick;
+  color: black;
   font-size: 1vw;
   text-align: center;
   padding-top: 20px;
@@ -103,3 +103,24 @@ html {
 }
 
 /* SearchBar*/
+#search-button{
+  background-color: #b42222;
+  color: aliceblue;
+  text-align: center;
+  
+}
+#busquedaTitle{
+  padding-bottom: 50px;
+  text-align: center;
+}
+.linea{
+  color: aliceblue;
+  width: 80vw;
+}
+.SearchTittle{
+  text-align: center;
+  padding-left: 90px;
+  background-color: black;
+  color: aliceblue;
+  padding-bottom: 150px;
+}

@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer=()=>{
     return(
+        
         <div className='pie'>
+            
             <div className="redes">
                 <h6>Síguenos</h6>
                 <br>
