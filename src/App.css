@@ -2,19 +2,30 @@ html {
   text-align: center;
   background-color: black;
 }
+/*Pelis*/
+
+#contenedorCard{
+  background-color: black;
+  margin: auto;
+  color: aliceblue;
+  text-align: center;
+  width: 18rem;
+}
+.imagenCard{
+  text-align: center;
+  
+}
 .contenidoPelis{
   background-color: black;
   text-align: center;
-  padding: 70px;
   font-size: 1vw;
   color: aliceblue;
 
 }
 .contenido{
   background-color: black;
+  margin: auto;
   text-align: center;
-  padding: 20px;
-  margin: 50px;
   font-size: 1vw;
   color: aliceblue;
 }
@@ -90,3 +101,5 @@ html {
   margin: auto;
   padding-bottom: 20px;
 }
+
+/* SearchBar*/

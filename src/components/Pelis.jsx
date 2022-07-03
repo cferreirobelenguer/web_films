@@ -28,13 +28,19 @@ const Pelis=()=>{
         pelis.map((i) =>{
             return(
                 <div className="contenidoPelis" key={i.id}>
-                    <img src={'https://image.tmdb.org/t/p/w500/'+i.poster_path} className="img-fluid" width="300" heigth="300" alt="poster"/>
-                    <div className="tituloPelis">
-                        <h3>{i.original_title} - {i.release_date}</h3>
-                    </div>
-                    <div className="contenido">
-                        <h5>{i.overview}</h5>
-                    </div>
+                        <div className="card" id="contenedorCard" >
+                            <img src={'https://image.tmdb.org/t/p/w500/'+i.poster_path} id="imagenCard" class="card-img-top" width="300" heigth="300" alt="poster"/>
+                            <div class="card-body">
+                                <div className="tituloPelis">
+                                    <h3>{i.original_title} - {i.release_date}</h3>
+                                </div>
+                                <div className="contenido">
+                                    <h5>{i.overview}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
                     
                     
                 </div>
