@@ -7,37 +7,57 @@ const SearchBar=()=>{
     const [titulos, setTitulos]=useState([]);
     const [titulos2, setTitulos2]=useState([]);
     const [busqueda, setBusqueda]=useState("");
+    const [tele1, setTele1]=useState([]);
+    const [tele2, setTele2]=useState([]);
+
     const verTitulos=()=>{
         axios.get('https://api.themoviedb.org/3/discover/movie?api_key='+apiKey)
             .then(res=>{
                 setTitulos(res.data.results)
                 
             });
+             //datos de tv
+        axios.get('https://api.themoviedb.org/3/discover/tv?api_key='+apiKey)
+            .then(res=>{
+            //Se introducen los datos de la petición dentro del objeto resultado
+                setTele1(res.data.results)
+                console.log(tele1);
+            });
         }
+
         useEffect(() => {
             verTitulos()
             },[]
-            );
+);
     const handlerChange=e=>{
         setBusqueda(e.target.value);
         filtrar(e.target.value);
     }
     const filtrar=(terminoBusqueda)=>{
+        console.log(tele1);
         var resultados=titulos.filter((i)=>{
             if(i.original_title.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
                 console.log(i);
-                return i;
+                return i
+            }
+        })
+        var resultadosTele=tele1.filter((j)=>{
+            if(j.original_name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
+                console.log(j);
+                return j
             }
         })
         setTitulos2(resultados);
+        setTele2(resultadosTele);
         console.log(titulos2);
+        console.log(tele2);
     }
         
     
     return(
         <div className="SearchTittle">
-            <div class="input-group" id="busquedaTitle">
-                <div class="form-outline">
+            <div className="input-group" id="busquedaTitle">
+                <div className="form-outline">
                     <input 
                     value={busqueda}
                     id="search-input" type="search"
@@ -68,6 +88,24 @@ const SearchBar=()=>{
                                 </div>
                                 <div className="contenido">
                                     <h5>{i.overview}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            );
+        } )}
+        {tele2.map((j) =>{
+            return(
+                <div className="contenidoPelis" key={j.id}>
+                        <div className="card" id="contenedorCard" >
+                            <img src={'https://image.tmdb.org/t/p/w500/'+j.poster_path} id="imagenCard" className="card-img-top" width="300" heigth="300" alt="poster"/>
+                            <div className="card-body">
+                                <div className="tituloPelis">
+                                    <h3>{j.original_title} - {j.release_date}</h3>
+                                </div>
+                                <div className="contenido">
+                                    <h5>{j.overview}</h5>
                                 </div>
                             </div>
                         </div>

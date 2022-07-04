@@ -11,6 +11,13 @@ html {
   text-align: center;
   width: 18rem;
 }
+#contenedorTele{
+  background-color: black;
+  margin: auto;
+  color: aliceblue;
+  text-align: center;
+  width: 18rem;
+}
 .imagenCard{
   text-align: center;
   
@@ -104,14 +111,14 @@ html {
 
 /* SearchBar*/
 #search-button{
-  background-color: #b42222;
+  background-color: #000000;
   color: aliceblue;
   text-align: center;
   
 }
 #busquedaTitle{
   padding-bottom: 50px;
-  text-align: center;
+  text-align:center;
 }
 .linea{
   color: aliceblue;
